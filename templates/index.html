@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Click on GET button to generate a password</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h3 style="text-align: center">Click on GET button to generate a password</h3>
+    <form method="get" action="/pass/">
+            <button type="submit" name="Click"> GET </button>
+    </form>
+    <p id='password'>{{ show_password }}</p>
+
+</div>
+{% endblock %}
